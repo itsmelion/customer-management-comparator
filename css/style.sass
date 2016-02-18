@@ -1,0 +1,70 @@
+@import vars
+@import typography
+@import buttons
+@import component
+@import modal
+
+	
+.edgeLoad-brand
+	visibility:hidden
+.brand
+	height: 191px
+body
+	background: url("img/paper.png")
+	@include base-gray-text
+	
+a
+	@include secondary-gray-text
+	text-decoration: none
+	outline: none
+	a:hover, a:focus
+		@include base-gray-text
+header
+	padding-top: 1em
+	height: 500px
+	background-color: darken($base-color,25%)
+	background-image: url("img/bg.jpg")
+	background-size: cover
+	background-position: center left
+	color: #ffffff
+	margin-bottom: -80px
+	@media screen and (max-width:768px)
+		background-image: url("img/bgmobile.jpg")
+		margin-bottom: 0
+header ul
+	max-width: 470px
+	min-width: 320px
+	margin: 0 auto
+	padding-left: 0
+header li
+	margin-top: 1.2em
+	display: inline-block
+	list-style: none
+	margin-left: 5px
+#sub
+	font-size: 1rem
+	max-width: 500px
+	text-align: justify
+	text-align-last: center
+	margin: 0 auto
+	padding: 2em 0em
+header p
+	text-shadow: 0 0 14px #555555
+footer
+	padding: 1em
+	@include disabled-gray-text
+	text-align: center
+#msform
+	background-color: #fafafa
+	padding: 2em
+	min-height: 850px
+	@media screen and (max-width:768px)
+		min-height: 970px
+
+#msform img
+	margin-bottom: 2em
+.errorTxt
+	width: 80%
+	margin-left: 10%
+	font-size: 0.8rem
+	color: #d46767

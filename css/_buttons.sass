@@ -1,0 +1,57 @@
+#msform .action-button
+	border: 0 none
+	cursor: pointer
+	padding: .45em .8em
+	font-size: 1.1rem
+	position: relative
+	text-transform: uppercase
+	font-weight: 400
+	margin: 0 auto
+	margin-top: 1em
+	@include secondary-white-text
+	
+#msform .action-button:first-of-type
+	left: 15%
+#msform .action-button:nth-of-type(2)
+	left: 20%
+
+#msform .action-button2
+	border: 0 none
+	cursor: pointer
+	height: 3em
+	font-size: 1.1rem
+	position: relative
+	text-transform: uppercase
+	font-weight: 400
+	@include secondary-white-text
+
+#msform .action-button2:first-of-type
+	left: -3em
+
+.next
+	background: $base-color
+	transition: all 0.2s ease-in-out
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+.next:hover , .next:focus
+	background: lighten($base-color,5%)
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+	color: white !important
+	outline: none
+
+.previous
+	background: transparent
+	transition: 0.2s ease
+	color: $base-color !important
+.previous:focus , .previous:hover
+	background: rgba(0,0,0,0.1)
+	outline: none
+
+.submit
+	background: $secondary-color
+	transition: all 0.2s ease-in-out
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+.submit:hover , .submit:focus
+	background: lighten($secondary-color,5%)
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+	color: white !important
+	outline: none

@@ -1,0 +1,39 @@
+@mixin base-gray-text
+	color: #6d6d6d
+	color: rgba(0,0,0,.87)
+@mixin secondary-gray-text
+	color: #8f8f8f
+	color: rgba(0,0,0,.54)
+@mixin disabled-gray-text
+	color: #aaaaaa
+	color: rgba(0,0,0,.38)
+
+@mixin secondary-white-text
+	color: #ededed
+	color: rgba(255,255,255,.7)
+@mixin disabled-white-text
+	color: #ededed
+	color: rgba(255,255,255,.3)
+
+html , body
+	font-family: 'PT Sans', sans-serif
+	font-weight: 400
+	font-size: 100%
+	line-height: 1.25
+	@include base-gray-text
+
+h1
+	font-size: 2.4rem
+	font-weight: 700
+h2
+	font-size: 2rem
+	font-weight: 700
+h3
+	font-size: 1.6rem
+	font-weight: 700
+h4
+	font-size: 0.8rem
+li
+	font-size: 0.8rem
+	.ac-custom
+		font-size: 1rem
