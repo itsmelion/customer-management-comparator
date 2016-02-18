@@ -100,9 +100,13 @@ header ul { max-width: 470px; min-width: 320px; margin: 0 auto; padding-left: 0;
 
 header li { margin-top: 1.2em; display: inline-block; list-style: none; margin-left: 5px; }
 
-#sub { font-size: 1rem; max-width: 500px; text-align: justify; text-align-last: center; margin: 0 auto; padding: 2em 0em; }
+#sub { font-size: 1rem; max-width: 500px; text-align: left; text-align-last: center; margin: 0 auto; padding: 2em 0em; }
+
+#sub span { font-size: 0.8rem; color: rgba(255, 255, 255, 0.87); }
 
 header p { text-shadow: 0 0 14px #555555; }
+
+header p a { color: #69f; }
 
 footer { padding: 1em; color: #aaaaaa; color: rgba(0, 0, 0, 0.38); text-align: center; }
 
