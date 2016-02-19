@@ -147,12 +147,13 @@ function getResult(){
 
 	var score = { "plug" : 0, "agendor" : 0, "pipedrive" : 0 }
 	$('input[type=radio]:checked').each(function(){
-
 		if($(this).val().indexOf("a") >= 0){
 			score['agendor'] += 1;
-		} else if($(this).val().indexOf("d") >= 0){
+		}
+		if($(this).val().indexOf("d") >= 0){
 			score['pipedrive'] += 1;
-		} else if($(this).val().indexOf("p") >= 0){
+		}
+		if($(this).val().indexOf("p") >= 0){
 			score['plug'] += 1;
 		}
 	});
