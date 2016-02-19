@@ -45,12 +45,7 @@ $(document).ready(function(){
 });
 
 $(".next, .submit").click(function(){
-	if($(this).data("score")){
-		var result = getResult();
-		showResult(result);
-	}
-
-  if($(this).data("restart")){
+	if($(this).data("restart")){
     location.reload();
   }
 
@@ -127,10 +122,12 @@ function proceedNext(element){
 
 $('#msform').submit(function(event){
 	event.preventDefault();
+	var result = getResult();
+	showResult(result);
 	$.ajax({
 		url: "https://script.google.com/a/macros/izap.com.br/s/AKfycbxmOh9eOVNnu8II6334VBRk0MQcd3kLquPeRVxdcFKX7xg5qkAI/exec",
 		type: "post",
-		data: $(this).serialize()
+		data: $(this).serialize() + '&result=' + result["winner"]
 	});
 });
 
@@ -184,6 +181,8 @@ function showResult(result){
   // change href value of winners link
   $('.link-' + result['winner']).hide();
   $('.link-winner').find('a').attr('href', $('.link-' + result['winner']).find('a').attr('href'));
+
+  $('#winner-name').html(result['winner']);
 }
 
 
