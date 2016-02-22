@@ -26,6 +26,13 @@ var current_fs, next_fs, previous_fs; //fieldsets
 var opacity; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 
+var providersNames = { agendor: "Agendor", pipedrive: "Pipedrive", plug: "Plug CRM"}
+var providersDescs = { 
+	agendor: "O melhor CRM para você é o Agendor.<br/>Pioneira no Brasil, o Agendor é a ferramenta com custo mais acessível, além de ter um aplicativo com geolocalização e um \"mapa de clientes\", um relatório bastante interessante.",
+	pipedrive: "O melhor CRM para você é o Pipedrive.<br/>Ferramenta amplamente difundida nas startups é muito simples e gostosa de mexer. Apesar de ser menos completa e cobrada em Dólar é uma ferramenta super fácil.",
+	plug: "O melhor CRM para você é o Plug CRM.<br/>Simples e completo, este software de CRM Online é voltado para pequenas e médias empresas, mas apresenta mais funcionalidades, relatórios e filtros. Ideal para melhorar o relacionamento e a gestão da equipe de vendas. "
+}
+
 $(document).ready(function(){
 	$('#msform').validate({
 		errorElement : 'div',
@@ -183,7 +190,8 @@ function showResult(result){
   $('.link-' + result['winner']).hide();
   $('.link-winner').find('a').attr('href', $('.link-' + result['winner']).find('a').attr('href'));
 
-  $('#winner-name').html(result['winner']);
+  $('#winner-name').html(providersNames[result['winner']]);
+  $('#winner-desc').html(providersDescs[result['winner']]);
 }
 
 
