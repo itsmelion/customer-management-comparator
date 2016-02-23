@@ -171,6 +171,9 @@ function getResult(){
 		if(val > max){
 			max = val;
 			winner = key;
+		}else if(val == max && max > 0){
+			max +=1;
+			score[winner] +=1;
 		}
   });
 	return { winner: winner, score: score };
