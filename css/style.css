@@ -109,7 +109,7 @@ header p a { color: #69f; }
 
 footer { padding: 1em; color: #aaaaaa; color: rgba(0, 0, 0, 0.38); text-align: center; }
 
-#msform { background-color: #fafafa; padding: 2em; min-height: 850px; }
+#msform { background-color: #fafafa; padding: 2em; min-height: 975px; }
 @media screen and (max-width: 768px) { #msform { min-height: 970px; } }
 
 #msform img { margin-bottom: 2em; }

@@ -7,13 +7,22 @@
 		<title>O Melhor CRM</title>
 		<meta name="description" content="Descubra qual o melhor CRM para você" />
 		<meta name="keywords" content="Melhor CRM , teste, questionário , avaliação" />
-		<meta name="author" content="Stormcloud" />
+
+		<meta property="og:url" content="http://www.omelhorcrm.com.br" />
+		<meta property="og:title" content="O Melhor CRM" />
+		<meta property="og:description" content="Descubra qual o melhor CRM para você" />
+		<meta property="og:image" content="http://www.omelhorcrm.com.br/img/melhorcrm.png" />
+
 		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/g/semantic-ui@2.1.4(components/button.min.css)" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 		<!--Adobe Edge Runtime-->
 		<script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/6.0.0/edge.6.0.0.min.js"></script>
 		<!--Adobe Edge Runtime End-->
@@ -122,12 +131,12 @@ Ps III.: Envie sugestões e outras ferramentas para <a href="mailto:melhorcrm@gm
 
 						<fieldset class="ac-custom ac-radio ac-fill clearfix" autocomplete="off">
 							<div class="row">
-								<div class="col-md-5 col-md-offset-3 col-sm-offset-2">
+								<div class="col-md-8 col-md-offset-2">
 									<img class="img-responsive center-block" src="img/3.png" />
 									<h2>Eu prefiro ferramentas:</h2>
 									<ul>
-										<li><input id="r1" name="r3" type="radio" value="pa"><label for="r1">Brasileiras</label></li>
-										<li><input id="r2" name="r3" type="radio" value="d"><label for="r2">Internacionais</label></li>
+										<li><input id="r1" name="r3" type="radio" value="pa"><label for="r1">Brasileiras: por conta do suporte e tutoriais em português.</label></li>
+										<li><input id="r2" name="r3" type="radio" value="d"><label for="r2">Internacionais: por ser fácil de adaptar a outros idiomas e moedas.</label></li>
 									</ul>
 									<div class="errorTxt"></div>
 								</div>
@@ -142,9 +151,9 @@ Ps III.: Envie sugestões e outras ferramentas para <a href="mailto:melhorcrm@gm
 									<img class="img-responsive center-block" src="img/4.png" />
 									<h2>Minha área comercial (contando vendedor, gerente, diretor e marketing):</h2>
 									<ul>
-										<li><input id="r1" name="r4" type="radio" value="d"><label for="r1">Sou somente EU</label></li>
-										<li><input id="r2" name="r4" type="radio" value="a"><label for="r2">Possui de 2 a 4 pessoas</label></li>
-										<li><input id="r3" name="r4" type="radio" value="p"><label for="r3">Possui mais de 5 pessoas</label></li>
+										<li><input id="r1" name="r4" type="radio" value="d"><label for="r1">Somente eu</label></li>
+										<li><input id="r2" name="r4" type="radio" value="a"><label for="r2">de 2 a 5 pessoas</label></li>
+										<li><input id="r3" name="r4" type="radio" value="p"><label for="r3">mais de 6 pessoas</label></li>
 									</ul>
 									<div class="errorTxt"></div>
 								</div>
@@ -286,8 +295,29 @@ Ps III.: Envie sugestões e outras ferramentas para <a href="mailto:melhorcrm@gm
 									<p class="text-xs-center link-pipedrive"><a href="https://www.pipedrive.com">Pipedrive</a></p>
 									<p class="text-xs-center link-plug"><a href="https://www.plugcrm.net">Plug CRM</a></p>
 
-									<div>
-										<input type="button" name="restart" class="submit action-button" value="Refazer teste" data-restart="true" />
+									<div class="row" style="margin-top: 25px;">
+										<p class="text-xs-center">Compartilhar:</p>
+										<div class="row col-lg-12" style="margin-left: 10%;">
+											<div class="ui facebook button goodshare" data-type="fb" data-url="www.omelhorcrm.com.br" >
+												<i class="fa fa-facebook fa-fw"></i> Facebook
+											</div>
+
+											<div class="ui linkedin button goodshare" data-type="li" data-url="www.omelhorcrm.com.br">
+												<i class="fa fa-linkedin fa-fw"></i> Linkedin
+											</div>
+
+											<div class="ui google plus button goodshare" data-type="gp" data-url="www.omelhorcrm.com.br">
+												<i class="fa fa-google-plus fa-fw"></i> Google
+											</div>
+
+											<div class="ui twitter button goodshare" data-type="tw" data-url="www.omelhorcrm.com.br">
+												<i class="fa fa-twitter fa-fw"></i> Twitter
+											</div>
+										</div>
+									</div>
+
+									<div class="text-xs-center" style="margin-top: 15px">
+										<input type="button" name="restart" class="submit action-button" style="left: 0;" value="Refazer teste" data-restart="true" />
 									</div>
 								</div>
 							</div>
@@ -306,5 +336,6 @@ Ps III.: Envie sugestões e outras ferramentas para <a href="mailto:melhorcrm@gm
 	<script type="text/javascript" src="js/svgcheckbx.js"></script>
 	<script type="text/javascript" src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.goodshare.js/3.2.5/goodshare.min.js"></script>
 	</body>
 </html>
