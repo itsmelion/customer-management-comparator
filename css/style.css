@@ -34,6 +34,10 @@ li .ac-custom { font-size: 1rem; }
 
 .submit:hover, .submit:focus { background: #e98089; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); color: white !important; outline: none; }
 
+.test { background: #6ce56c; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); color: white !important; }
+
+.test:hover, .test:focus { background: #81e981; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); color: white !important; outline: none; }
+
 .ac-custom { margin: 0 auto; }
 
 .ac-custom ul, .ac-custom ol { list-style: none; padding: 1em 2em; }
@@ -99,7 +103,7 @@ header ul { max-width: 470px; min-width: 320px; margin: 0 auto; padding-left: 0;
 
 header li { margin-top: 1.2em; display: inline-block; list-style: none; margin-left: 5px; }
 
-#sub { font-size: 1rem; max-width: 500px; text-align: left; text-align-last: center; margin: 0 auto; padding: 2em 0em; }
+#sub { font-size: 1rem; max-width: 715px; text-align: left; text-align-last: center; margin: 0 auto; padding: 2em 0em; }
 
 #sub span { font-size: 0.8rem; color: rgba(255, 255, 255, 0.87); }
 
@@ -109,7 +113,7 @@ header p a { color: #69f; }
 
 footer { padding: 1em; color: #aaaaaa; color: rgba(0, 0, 0, 0.38); text-align: center; }
 
-#msform { background-color: #fafafa; padding: 2em; min-height: 975px; }
+#msform { background-color: #fafafa; padding: 2em; min-height: 1125px; }
 @media screen and (max-width: 768px) { #msform { min-height: 970px; } }
 
 #msform img { margin-bottom: 2em; }

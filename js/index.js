@@ -54,6 +54,7 @@ $(document).ready(function(){
 $(".next, .submit").click(function(){
 	if($(this).data("restart")){
     location.reload();
+    window.scrollTo(0, 450);
   }
 
 	if(validateFieldset($(this).parent())){
@@ -180,6 +181,8 @@ function getResult(){
 }
 
 function showResult(result){
+  var linksTrial = { plug: "https://www.plugcrm.net/crm-online", agendor: "https://web.agendor.com.br/cadastro/", pipedrive: "https://app.pipedrive.com/register?_v_lang=pt-BR"}
+
 	$('#progress-plug').val(result['score']['plug']);
 	$('#progress-pipedrive').val(result['score']['pipedrive']);
 	$('#progress-agendor').val(result['score']['agendor']);
@@ -190,8 +193,7 @@ function showResult(result){
 	AdobeEdge.getComposition("PLugWon").getStage().play("start");
 
   // change href value of winners link
-  $('.link-' + result['winner']).hide();
-  $('.link-winner').find('a').attr('href', $('.link-' + result['winner']).find('a').attr('href'));
+  $('.link-winner').find('a').attr('href', linksTrial[result['winner']]);
 
   $('#winner-name').html(providersNames[result['winner']]);
   $('#winner-desc').html(providersDescs[result['winner']]);
